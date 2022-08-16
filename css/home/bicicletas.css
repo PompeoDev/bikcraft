@@ -1,0 +1,76 @@
+.bicicletas-bg {
+  display: flex;
+  gap: 40px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.bicicletas h1 {
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-size: 4rem;
+  padding-top: 120px;
+  font-weight: 600;
+  color: #111;
+}
+.bicicletas h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.25;
+  position: relative;
+  margin: 20px;
+  margin-bottom: 10px;
+  color: #111;
+}
+.bicicletas p {
+  margin-left: 20px;
+  color: #595959;
+  font-size: 1.125rem;
+  font-weight: 600px;
+}
+.bicicletas img {
+  border-radius: 4px;
+}
+.bicicletas h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background: #ffbb00;
+  position: absolute;
+  top: 15px;
+  left: -20px;
+}
+.bicicletas h2:hover {
+  color: #595959;
+}
+
+@media (max-width: 1200px) {
+  .bicicletas h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .bicicletas h1 {
+    font-size: 2rem;
+  }
+  .bicicletas h2 {
+    font-size: 1.125rem;
+  }
+  .bicicletas h2::before {
+    top: 10px;
+    left: -10px;
+    width: 6px;
+    height: 4px;
+  }
+}
+@media (max-width: 600px) {
+  .bicicletas h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .bicicletas-bg {
+    flex-direction: column;
+  }
+}
