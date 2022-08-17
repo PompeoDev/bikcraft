@@ -1,72 +1,44 @@
-.bicicletas-bg {
+.bicicletas {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.bicicletas ul {
   display: flex;
   gap: 40px;
-  max-width: 1500px;
+  padding: 0 20px;
+  max-width: 1400px;
   margin: 0 auto;
+  overflow-x: auto;
 }
-.bicicletas h1 {
-  max-width: 1200px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  font-size: 4rem;
-  padding-top: 120px;
-  font-weight: 600;
-  color: #111;
+.bicicletas li {
+  min-width: 260px;
 }
-.bicicletas h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 1.25;
-  position: relative;
-  margin: 20px;
-  margin-bottom: 10px;
-  color: #111;
-}
-.bicicletas p {
-  margin-left: 20px;
-  color: #595959;
-  font-size: 1.125rem;
-  font-weight: 600px;
+.bicicletas h3 {
+  display: flex;
+
+  align-items: center;
 }
 .bicicletas img {
-  border-radius: 4px;
+  margin-bottom: 16px;
 }
-.bicicletas h2::before {
+.bicicletas h3::before {
   content: "";
-  display: block;
+  display: inline-block;
   width: 12px;
   height: 8px;
+  margin-right: 8px;
   background: #ffbb00;
-  position: absolute;
-  top: 15px;
-  left: -20px;
+  transform: width 0.2s;
 }
-.bicicletas h2:hover {
-  color: #595959;
+.bicicletas a:hover h3::before {
+  width: 24px;
 }
-
-@media (max-width: 1200px) {
-  .bicicletas h1 {
-    font-size: 3rem;
-  }
+.bicicletas a {
+  display: block;
 }
 @media (max-width: 800px) {
-  .bicicletas h1 {
-    font-size: 2rem;
-  }
-  .bicicletas h2 {
-    font-size: 1.125rem;
-  }
-  .bicicletas h2::before {
-    top: 10px;
-    left: -10px;
-    width: 6px;
-    height: 4px;
-  }
-}
-@media (max-width: 600px) {
-  .bicicletas h1 {
-    font-size: 2rem;
+  .bicicletas {
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 450px) {

@@ -13,14 +13,12 @@
 .botao:hover {
   background: linear-gradient(180deg, #ffb60d 0%, #e59317 100%);
 }
-.grid2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0px 40px;
+.container {
   max-width: 1200px;
   box-sizing: border-box;
-  padding: 0px 20px;
   margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 40px;
 }
 @media (max-width: 600px) {
   .botao {

@@ -37,3 +37,6 @@ a {
   font-family: "Poppins";
   font-weight: 400;
 }
+img [src$=".jpg"] {
+  border-radius: 4px;
+}

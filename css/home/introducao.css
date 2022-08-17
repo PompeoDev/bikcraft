@@ -4,6 +4,10 @@
   box-shadow: inset 0 -120px white;
   position: relative;
 }
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .introducao-conteudo {
   align-self: end;
   padding-bottom: 200px;
@@ -66,10 +70,6 @@
     padding-top: 40px;
     box-shadow: inset 0 -60px #fff;
   }
-  .introducao {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
   .introducao-bg::after {
     display: none;
   }
@@ -82,5 +82,9 @@
   .introducao img {
     height: 300px;
     width: 100%;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 }
